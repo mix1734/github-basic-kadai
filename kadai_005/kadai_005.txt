@@ -1,0 +1,33 @@
+PS C:\Users\himot\Downloads\kadai> mkdir git_challenge
+
+    ディレクトリ:C:\Users\himot\Downloads\kadai
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2026/11/13    18:46                git_challenge
+
+PS C:\Users\himot\Downloads\kadai> cd C:\Users\himot\Downloads\kadai\git_challenge
+PS C:\Users\himot\Downloads\kadai\git_challenge> git init
+Initialized empty Git repository in C:/Users/himot/Downloads/kadai/git_challenge/.git/
+PS C:\Users\himot\Downloads\kadai\git_challenge> echo "ファイルに入れたい文字列" >> hello_world.txt
+PS C:\Users\himot\Downloads\kadai\git_challenge> git add .
+PS C:\Users\himot\Downloads\kadai\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 0beeb3d] hello_world.txtを追加
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\himot\Downloads\kadai\git_challenge> git add .                            
+PS C:\Users\himot\Downloads\kadai\git_challenge> git commit -m "日本語訳を追記"       
+[main 6cf7f04] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\himot\Downloads\kadai\git_challenge> git log                       
+commit 6cf7f04751889956f51b1318f2fcb72c3bf9ac2d (HEAD -> main)
+Author: mix1734 <himoty0527@gmail.com>
+Date:   Fri Nov 13 18:52:27 2026 +0900
+
+    日本語訳を追記
+
+commit 0beeb3d832a0a9353a81bea4d1c32d70445cf955
+Author: mix1734 <himoty0527@gmail.com>
+Date:   Fri Nov 13 18:50:10 2026 +0900
+
+    hello_world.txtを追加
